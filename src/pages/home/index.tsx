@@ -1,8 +1,12 @@
+import MainContent from "./components/MainContent";
+import Sidebar from "./components/Sidebar";
+
 function index() {
   return (
-    <>
-        <h1 className="bg-amber-500">hola soy el home</h1>
-    </>
+    <div className="grid md:grid-cols-[20%_1fr] h-screen">
+      <Sidebar />
+      <MainContent />
+    </div>
   );
 }
 
